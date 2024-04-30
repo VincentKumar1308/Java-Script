@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPS</title>
+</head>
+<body>
+    <script type="text/javascript">
+      //directly creation of the object
+
+      var cars={
+        car_model:"tesla",
+        car_year:2009,
+        tesla_pilot:function(){
+            document.write("<h1> It has the auto pilot mode </h1>");
+        } 
+      }
+      cars.tesla_pilot();
+      document.write(cars.car_model+"<br>");
+
+      //creation of the object with function constructors
+      function cars_object(car_engine,speed,price){
+        this.car_engine=car_engine,
+        this.speed=speed,
+        this.price=price,
+        this.Drive_mode= function(){
+            document.write("<h1> SElf drive mode</h1>");
+        }
+
+      }
+      
+        //creating the objects for the function constructors
+        var  c1=new cars_object("petrol",120,30000);
+        document.write(c1.car_engine+"<br>");
+        c1.Drive_mode();
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+#btn{
+    padding: 1%;
+    background-color: azure;
+   font-weight: bolder;
+}
+
+#btn:hover{
+    padding: 1%;
+    background-color: orangered;
+    font-weight: bolder;
+    color: white;
+}
