@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/validation.js
+    "></script>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="nav">
+            <img src="Images/31490580_640x640.avif" alt="" height="100px">
+            <span id="library"> Library Poratal</span>
+            <span id="books">Books</span>
+        </div>
+        <div class="contents">
+            <p id="newbook">Add New Book</p>
+            <div class="labels">
+                <form action="" onsubmit="return validate()">
+
+                    <!--Category-->
+                    <label for="category">category</label>
+                    <select name="category" id="category" class="label1">
+                        <Option value="IT" id="it">IT</Option>
+                        <option value="CSE" id="cse">CSE</option>
+                        <option value="ECE" id="ece">ECE</option>
+                        <option value="MECH" id="mech">MECH</option>
+                    </select><span id="cate" class="error">Choose one option</span><br>
+
+
+                    <!--Book-->
+                    <label for="book">Book</label>
+                    <input type="text" id="book" class="label1"><span class="error" id="bookerror">Invalid</span><br>
+
+                    <!--Author Email-->
+                    <label for="authoremail">Author Email</label>
+                    <input type="email" id="email" class="label1"><span class="error" id="mailerror">Invalid</span><br>
+
+                    <!--Author Name-->
+                    <label for="authorname">Authorname</label>
+                    <input type="text" id="authorname" class="label1"><span class="error"
+                        id="authorerror">Invalid</span><br>
+
+                    <!--Published-->
+                    <label for="published">Published</label>
+                    <input type="number" id="published" class="label1"><span class="error"
+                        id="publishederror">Invalid</span><br>
+
+                    <!--Price-->
+                    <label for="Price">Price</label>
+                    <input type="text" id="price" class="label1"><span class="error" id="priceerror">Invalid</span><br>
+
+                    <button id="save" onclick="savedata()">Save</button> <button id="cancel">Cancel</button> <button
+                        id="show" onclick="displaydetails()">Show</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright @2019 - present Syncfusion</p>
+        </div>
+    </div>
+
+
+    <!--displaying the data table-->
+    <div class="outers">
+        <div class="displaydata">
+            <img src="Images/31490580_640x640.avif" alt="" height="100px">
+            <span id="library"> Library Poratal</span>
+            <span id="books">Books</span><br>
+        </div>
+        <div class="datatable">
+            <!--Book-->
+            <label for="book" class="tablealign">Book</label>
+            <span id="bookid"></span><br>
+            <br>
+
+            <!--Author Email-->
+            <label for="authoremail" class="tablealign">Author Email</label><br>
+            <br>
+
+            <!--Author Name-->
+            <label for="authorname" class="tablealign">Authorname</label><br>
+            <br>
+
+            <!--Published-->
+            <label for="published" class="tablealign">Published</label><br>
+            <br>
+
+            <!--Price-->
+            <label for="Price" class="tablealign">Price</label><br>
+            <br>
+
+        </div>
+        <div class="footer">
+            <p>Copyright @2019 - present Syncfusion</p>
+        </div>
+    </div>
+   
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

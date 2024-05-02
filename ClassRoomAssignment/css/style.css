@@ -1,0 +1,102 @@
+.outer{
+    border: 2px solid black;
+  
+}
+
+.nav{
+  
+    width: 100%;
+    height: 100%;
+     display: flex;
+     border: 2px solid black;
+}
+
+#library{
+
+   font-weight: bold;
+   margin-left: 5%;
+   font-size: 2rem;
+   margin-top: 3%
+  
+}
+
+#books{
+  
+ 
+   font-weight: bold;
+   margin-left: 5%;
+   font-size: 2rem;
+   margin-top: 3%;
+    
+}
+
+.contents{
+    margin-left: 2%;
+    border-bottom: 2px solid black;
+}
+
+.contents #newbook{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.labels{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 1%;
+}
+
+.labels input,select{
+    height:1.5rem;
+    width: 12rem;
+}
+
+.label1{
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+button{
+    padding: 1%;
+    width: 10%;
+}
+
+button:hover{
+    background-color: hsl(0,0%,85%);
+}
+
+.footer{
+    margin-left: 2%;
+}
+
+.error{
+    margin-left: 1%;
+    color: red;
+    visibility: hidden;
+}
+
+.outers{
+    
+    width: 100%;
+    height: 100%;
+     border: 2px solid black;
+   
+}
+
+.displaydata{
+   display: flex;
+   border-bottom: 2px solid black;
+   margin-bottom: 2%;
+
+}
+
+.datatable{
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.tablealign{
+   font-size: 1.5rem;
+   font-weight: bold;
+  
+}
